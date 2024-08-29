@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carnatic music🎻</title>
+    <style>
+      body {
+        background: linear-gradient(
+          44.8deg,
+          rgba(255, 136, 102, 0.67) -53.1%,
+          rgba(255, 221, 136, 0.28) 49%
+        );
+      }
+      h1 {
+        text-align: center;
+      }
+      h2 {
+        text-align: center;
+      }
+      h3 {
+        text-align: center;
+      }
+      h4 {
+        text-align: center;
+      }
+      p {
+        text-align: center;
+        line-height: 20px;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-weight: 100px;
+      }
+      a {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        padding: 8px;
+      }
+      a:hover {
+        text-decoration: underline;
+        color: blueviolet;
+      }
+      span {
+        text-decoration: solid;
+        color: rgb(137, 15, 82);
+        font-size: 18px;
+      }
+      button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+        background-color: #c11037;
+        color: rgb(243, 243, 243);
+      }
+      .center-img {
+        display: block;
+        margin: 0 auto;
+        max-width: 200px;
+        border: 1 px solid black;
+        border-radius: 20px;
+      }
+      .main-content {
+        background: linear-gradient(
+          to right,
+          rgb(242, 112, 156),
+          rgb(255, 148, 114)
+        );
+        color: antiquewhite;
+        display: block;
+        margin: 0 auto;
+        max-width: 50%;
+        border: 2px solid rgb(188, 105, 105);
+        border-radius: 20px;
+      }
+      .know-more {
+        background-color: rgb(104, 3, 69);
+        color: whitesmoke;
+        display: block;
+        margin: 0 auto;
+        border: none;
+        border-radius: 6px;
+        box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.3);
+        transition: all 200ms ease;
+        padding: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-content">
+      <h1><strong>Carnatic music🎻</strong></h1>
+      <h2>
+        <em>Carnatic music is the main musical tradition of South India</em>
+      </h2>
+      <p>
+        Purandara Dasa, who is known as the "father (pitamaha) of Carnatic
+        music", formulated the system that is commonly used for the teaching of
+        Carnatic music. Venkatamakhin invented and authored the formula for the
+        melakarta system of raga classification in his Sanskrit work, the
+        Chaturdandi Prakasika (1660 AD).
+      </p>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/140/951/original/Purandara-Dasa.jpg?1724607942"
+        alt="Purandara-Dasa"
+        class="center-img"
+      />
+      <a href="https://en.wikipedia.org/wiki/Purandara_Dasa" target="_blank"
+        ><strong> Father Of Karnatic Music</strong></a
+      >
+      <br />
+      <em><h3>Origin Of Saptha Swaras In Indian Karnatic Music</h3></em>
+      <p>
+        The Swars of Indian Music are
+        <span><strong>Sa Re Ga Ma Pa Da Ni Sa</strong></span>
+        Shadjam(Sa), Rishabham(Re), Gandharam(Ga), Madhyamam(Ma),
+        Panchamam(Pa),Dhaivatam(Da), Nishadam(Ni). These shudha swaras or notes
+        are traditionally known to have originated from sound of different
+        animals and some have taditional meanings of their own. Each swara is
+        associated with one of the seven chakras of the body. Sa is sound
+        associated with peacock, Re-bull, Ga- The goat, Ma- the dove/heron, Pa-
+        the cuckoo/nightingale, Da- the horse, Ni- the elephant.
+      </p>
+      <button class="know-more"><strong>Want to Know more</strong></button>
+      <hr />
+      <h4>Coded By Shivani</h4>
+    </div>
+    <script>
+      function details() {
+        let name = prompt("please enter yor name");
+        let country = prompt("please enter country name");
+        let age = prompt("please enter you age");
+        let body = document.querySelector("body");
+        if (age > 10) {
+          body.innerHTML =
+            "<p>Thank you so much🙏," +
+            name +
+            "  from  " +
+            country +
+            "  for showing your intrest in karnatic music🎶. We will reac out you soon</p>";
+        } else {
+          body.innerHTML =
+            " <p>Hi " +
+            name +
+            " from " +
+            country +
+            " Sorry ☹ no Class for Children Below 10Y old.</p>";
+        }
+      }
+      let detailButton = document.querySelector(".know-more");
+      detailButton.addEventListener("click", details);
+    </script>
+  </body>
+</html>
